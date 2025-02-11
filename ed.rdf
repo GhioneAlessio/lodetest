@@ -1,0 +1,1205 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/"
+     xml:base="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:bag="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:sequence="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/list.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <dc:creator>Frattarola Marco</dc:creator>
+        <dc:creator>Ghione Alessio</dc:creator>
+        <dc:date>2025-01-31</dc:date>
+        <dc:description xml:lang="en">An ontology describing various aspects of Japanese media, including anime, manga, and related concepts.</dc:description>
+        <dc:description xml:lang="it">Un&apos;ontologia che descrive vari aspetti dei media giapponesi, inclusi anime, manga e concetti correlati</dc:description>
+        <dc:title>Japanese Media Ontology</dc:title>
+        <vann:preferredNamespacePrefix>jm</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.semanticweb.org/japanese-media/</vann:preferredNamespaceUri>
+        <rdfs:label>Japanese media</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/appartieneA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/appartieneA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Rivista"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/CasaEditrice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/collegaDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/collegaDi">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/detieneDiritti -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/detieneDiritti">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/CasaEditrice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/pubblicatoDa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/appartieneA"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/dipendenteDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/dipendenteDi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/StudioAnimazione"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haDiretto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/prodottoDa"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/direttoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/direttoDa">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haDiretto"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Regista"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haAdattamentoAnime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haAdattamentoAnime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haAutore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haAutore">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haScritto"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaArtistica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Autore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haDiretto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haDiretto">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Regista"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haDoppiato -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haDoppiato">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/èDoppiatoDa"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/VoiceActorOrActress"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haLavoratoCon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haLavoratoCon">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Staff"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haDiretto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/èDoppiatoDa"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haPrequel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haPrequel">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haSequel"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaArtistica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaArtistica"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haPrequel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haPrequel"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haPrimoArcoNarrativo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haPrimoArcoNarrativo">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/list.owl#hasFirstItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haProdotto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haProdotto">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/prodottoDa"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/StudioAnimazione"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haScritto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haScritto">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Autore"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haSequel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haSequel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaArtistica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaArtistica"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haSequel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haSequel"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haTarget">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaNipponica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haUltimoArcoNrattaivo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haUltimoArcoNrattaivo">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/list.owl#hasLastItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/prodottoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/prodottoDa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/StudioAnimazione"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/pubblicatoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/pubblicatoDa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Rivista"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/èDoppiatoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/èDoppiatoDa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/VoiceActorOrActress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/inProduzione -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/inProduzione">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaNipponica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/numeroEpisodi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/numeroEpisodi">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/AnimeSerie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/numeroVolumi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/numeroVolumi">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/prezzoVolumeEuro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/prezzoVolumeEuro">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/titoloAlternativo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/titoloAlternativo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaNipponica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/èStagionale -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/èStagionale">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaNipponica"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+        <skos:broadMatch>https://schema.org/VideoObject</skos:broadMatch>
+        <skos:exactMatch>http://www.wikidata.org/entity/Q1107</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/AnimeFilm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/AnimeFilm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime"/>
+        <skos:closeMatch>https://schema.org/Movie</skos:closeMatch>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q20650540</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/AnimeSerie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/AnimeSerie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q117467261</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/ArcoNarrativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/ArcoNarrativo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/ArcoNarrativo"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/bag.owl#itemOf"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaSerie"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Autore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Autore">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Persona"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haScritto"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Persona"/>
+        <skos:exactMatch>https://schema.org/author</skos:exactMatch>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q482980</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/CasaEditrice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/CasaEditrice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Organizzazione"/>
+        <skos:closeMatch>https://schema.org/publisher</skos:closeMatch>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q2085381</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/LongRunning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/LongRunning">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/AnimeSerie"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/èStagionale"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/AnimeSerie"/>
+        <skos:broadMatch>https://www.wikidata.org/wiki/Q63952888</skos:broadMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaNipponica"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/pubblicatoDa"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Rivista"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaNipponica"/>
+        <skos:closeMatch>https://schema.org/ComicSeries</skos:closeMatch>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q8274</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaCompleto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaCompleto">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaSerie"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/numeroVolumi"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/inProduzione"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaSerie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaInCorso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaInCorso">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaSerie"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/numeroVolumi"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/inProduzione"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaSerie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaOneShot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaOneShot">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/inProduzione"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/numeroVolumi"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q21202185</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaSerie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/MangaSerie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/numeroVolumi"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/inProduzione"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/numeroVolumi"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/inProduzione"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/list.owl#List"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Manga"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q21198342</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OVA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OVA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/AnimeFilm"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q220898</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaArtistica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaArtistica">
+        <skos:exactMatch>https://schema.org/CreativeWork</skos:exactMatch>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q386724</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaNipponica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaNipponica">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaArtistica"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haTarget"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Target"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/OperaArtistica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Organizzazione -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Organizzazione">
+        <skos:closeMatch>https://www.wikidata.org/wiki/Q43229</skos:closeMatch>
+        <skos:exactMatch>https://schema.org/Organization</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Persona">
+        <skos:exactMatch>https://schema.org/Person</skos:exactMatch>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q5</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Regista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Regista">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Staff"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haDiretto"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Staff"/>
+        <skos:closeMatch>https://www.wikidata.org/wiki/Q3455803</skos:closeMatch>
+        <skos:exactMatch>https://schema.org/director</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Rivista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Rivista">
+        <skos:broadMatch>https://schema.org/Periodical</skos:broadMatch>
+        <skos:closeMatch>https://www.wikidata.org/wiki/Q15296520</skos:closeMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Persona"/>
+        <skos:exactMatch>https://schema.org/employee</skos:exactMatch>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q105764136</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Stagionale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Stagionale">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/AnimeSerie"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/èStagionale"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/AnimeSerie"/>
+        <skos:broadMatch>https://www.wikidata.org/wiki/Q63952888</skos:broadMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/StudioAnimazione -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/StudioAnimazione">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Organizzazione"/>
+        <skos:broadMatch>https://schema.org/productionCompany</skos:broadMatch>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q1107679</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Target -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Target">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Josei"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Kodomo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Seinen"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shojo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shonen"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <skos:closeMatch>https://schema.org/Audience</skos:closeMatch>
+        <skos:closeMatch>https://www.wikidata.org/wiki/Q2604680</skos:closeMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/VoiceActorOrActress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/VoiceActorOrActress">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Staff"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/haDoppiato"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Anime"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Staff"/>
+        <skos:broadMatch>https://schema.org/actor</skos:broadMatch>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q2405480</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Arena_Celeste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Arena_Celeste">
+        <sequence:precedes rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/York_Shin_City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Assassinio_del_portatore_della_spada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Assassinio_del_portatore_della_spada"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Death_Parade_Anime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Death_Parade_Anime">
+        <prodottoDa rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Madhouse"/>
+        <inProduzione rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inProduzione>
+        <numeroEpisodi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</numeroEpisodi>
+        <èStagionale rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</èStagionale>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q11320614</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Elezione_Nuovo_Predisente -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Elezione_Nuovo_Predisente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Esame_Degli_Hunter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Esame_Degli_Hunter">
+        <sequence:precedes rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Zoldyck_e_il_recupero_di_Killua"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Formichimere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Formichimere">
+        <sequence:precedes rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Elezione_Nuovo_Predisente"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Futabasha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Futabasha">
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q2579061</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Greed_Island -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Greed_Island">
+        <sequence:precedes rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Formichimere"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Hiroshi_Kojina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Hiroshi_Kojina">
+        <haDiretto rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/HunterXHunterAnime"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q11589697</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Hoshi_Mamoru_Inu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Hoshi_Mamoru_Inu">
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Hoshi_Mamoru_Inu_2"/>
+        <haSequel rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Hoshi_Mamoru_Inu_2"/>
+        <haTarget rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Seinen"/>
+        <pubblicatoDa rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Weekly_Manga_Action"/>
+        <inProduzione rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inProduzione>
+        <numeroVolumi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numeroVolumi>
+        <titoloAlternativo>Il cane che guarda le stelle</titoloAlternativo>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q16951255</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Hoshi_Mamoru_Inu_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Hoshi_Mamoru_Inu_2">
+        <haTarget rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Seinen"/>
+        <pubblicatoDa rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Weekly_Manga_Action"/>
+        <inProduzione rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inProduzione>
+        <numeroVolumi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numeroVolumi>
+        <titoloAlternativo>Il cane che guarda le stelle 2</titoloAlternativo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/HunterXHunter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/HunterXHunter">
+        <bag:hasItem rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Arena_Celeste"/>
+        <bag:hasItem rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Esame_Degli_Hunter"/>
+        <bag:hasItem rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Formichimere"/>
+        <bag:hasItem rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Greed_Island"/>
+        <bag:hasItem rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/York_Shin_City"/>
+        <bag:hasItem rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Zoldyck_e_il_recupero_di_Killua"/>
+        <haAdattamentoAnime rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/HunterXHunterAnime"/>
+        <haAutore rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Yoshihiro_Togashi"/>
+        <haPrimoArcoNarrativo rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Esame_Degli_Hunter"/>
+        <haTarget rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shonen"/>
+        <haUltimoArcoNrattaivo rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Elezione_Nuovo_Predisente"/>
+        <pubblicatoDa rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shonen_Jump"/>
+        <inProduzione rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inProduzione>
+        <numeroVolumi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</numeroVolumi>
+        <prezzoVolumeEuro rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.5</prezzoVolumeEuro>
+        <titoloAlternativo>HxH</titoloAlternativo>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q696071</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/HunterXHunterAnime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/HunterXHunterAnime">
+        <prodottoDa rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Madhouse"/>
+        <inProduzione rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inProduzione>
+        <numeroEpisodi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">148</numeroEpisodi>
+        <èStagionale rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</èStagionale>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q70209136</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Josei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Josei">
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q503106</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Kagurabachi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Kagurabachi">
+        <bag:hasItem rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Assassinio_del_portatore_della_spada"/>
+        <bag:hasItem rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Rakuzaichi"/>
+        <haPrimoArcoNarrativo rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Versus_Shojo"/>
+        <haTarget rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shonen"/>
+        <pubblicatoDa rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shonen_Jump"/>
+        <inProduzione rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inProduzione>
+        <numeroVolumi rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</numeroVolumi>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Kodomo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Kodomo">
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q478804</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Madhouse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Madhouse">
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q650867</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Megumi_Han -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Megumi_Han">
+        <haDoppiato rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/HunterXHunterAnime"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q8966502</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Rakuzaichi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Rakuzaichi">
+        <sequence:precedes rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Assassinio_del_portatore_della_spada"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Seinen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Seinen">
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q237338</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shojo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shojo">
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q242492</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shonen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shonen">
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q231302</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shonen_Jump -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shonen_Jump">
+        <appartieneA rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shueisha"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q220015</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shueisha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Shueisha">
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q844822</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Takashi_Murakami -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Takashi_Murakami">
+        <haScritto rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Hoshi_Mamoru_Inu"/>
+        <haScritto rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Hoshi_Mamoru_Inu_2"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q11522652</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Takeru_Hokazono -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Takeru_Hokazono">
+        <haScritto rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Kagurabachi"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q126006258</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Tomoaki_Maeno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Tomoaki_Maeno">
+        <haDoppiato rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Death_Parade_Anime"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q1206674</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Versus_Shojo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Versus_Shojo">
+        <sequence:precedes rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Rakuzaichi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Weekly_Manga_Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Weekly_Manga_Action">
+        <appartieneA rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Futabasha"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q922549</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/York_Shin_City -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/York_Shin_City">
+        <sequence:precedes rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Greed_Island"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Yoshihiro_Togashi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Yoshihiro_Togashi">
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q550311</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Yuzuru_Tachikawa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Yuzuru_Tachikawa">
+        <haDiretto rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Death_Parade_Anime"/>
+        <skos:exactMatch>https://www.wikidata.org/wiki/Q17350112</skos:exactMatch>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Zoldyck_e_il_recupero_di_Killua -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Zoldyck_e_il_recupero_di_Killua">
+        <sequence:precedes rdf:resource="http://www.semanticweb.org/marco/ontologies/2025/0/untitled-ontology-16/Arena_Celeste"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
